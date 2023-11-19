@@ -11,22 +11,27 @@ import Reset from './Reset'
 
 
 function App() {
+  // const [state, setState] = useState(true);
   
 
   return (
-   <Router>
-    <Routes>
-      <Route path='/create' element={<Create/>}></Route>
-      <Route path='/view' element={<View/>}></Route>
-      <Route path='/edit/:id' element={<Edit/>}></Route>
-      <Route path='/login' element={<Login/>}></Route>
-      <Route path='/register' element={<Register/>}></Route>
-      <Route path='/forgot' element={<Forgot/>}></Route>
-      <Route path='/reset' element={<Reset/>}></Route>
-      {/* <Route path='/*' element={<Create/>}></Route> */}
+    <Router>
+      <Routes>
+       
+            <Route path='/create' element={<Create />} />
+            <Route path='/view' element={<View />} />
+            <Route path='/note/edit/:id' element={<Edit />} />
+    
+          <Route path='/' element={<Login />} />
+            <Route path='/login' element={<Login />} />
 
-    </Routes>
-   </Router>
+            <Route path='/register' element={<Register />} />
+            <Route path='/forgot' element={<Forgot />} />
+            <Route path='/user/reset/:token' element={<Reset />} />
+        
+       
+      </Routes>
+    </Router>
   )
 }
 
