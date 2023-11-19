@@ -33,6 +33,7 @@ function Create()
                 const url = "https://notes-8qae.onrender.com/note/add";
                 const response = await axios.post(url, data,config);
                 console.log(response);
+                navigate('/view')
     
         //   toast.success("Registeration Successful");
                 // console.log("register successfull");
