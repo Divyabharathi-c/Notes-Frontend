@@ -20,6 +20,10 @@ function Navbar() {
           <Link className="nav-link active fs-3" aria-current="page" to="/create">Create</Link>
         </li>
        
+        <li className="nav-item">
+         
+         <Link className="nav-link active fs-3" aria-current="page" to="/">Logout</Link>
+       </li>
          
 
         

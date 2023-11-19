@@ -83,6 +83,9 @@ function Login () {
               <div>
                 <Link to='/register'>Go to the register page</Link>
               </div>
+              <div>
+                <Link to='/forgot'>Go to the forgot page</Link>
+              </div>
               <br />
               <hr />
 
