@@ -39,7 +39,7 @@ function View() {
   return (
     <div>
       <Navbar />
-      <div className="container shadow p-3 mb-5 bg-body-tertiary rounded my-5">
+      <div style={{marginTop:"5rem"}} className="container shadow p-3 mb-5 bg-body-tertiary rounded-3 ">
         <div className="row">
           {read.map((element) => (
             <div className="col-sm-6 mb-3 mb-sm-0" key={element._id}>

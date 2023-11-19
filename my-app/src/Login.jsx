@@ -33,14 +33,12 @@ function Login () {
 
   return (
     <div>
-      <br />
-      <br />
-      <br />
+      
 
-      <div className='container w-75 p-3 shadow p-3 mb-5 bg-body-tertiary rounded'>
+      <div style={{marginTop:"9rem"}} className='container  w-50 p-3 shadow p-3 mb-5 bg-body-tertiary rounded'>
         <div className='row'>
-          <div className='col-12 text-center'>
-            <h2>Login</h2>
+          <div className='col-12 text-center '>
+            <h1>Login</h1>
           </div>
         </div>
         <div className='row'>
@@ -80,18 +78,17 @@ function Login () {
               >
                 Submit
               </button>
-              <div>
-                <Link to='/register'>Go to the register page</Link>
-              </div>
-              <div>
-                <Link to='/forgot'>Go to the forgot page</Link>
+              <div className='mt-3 '>
+                <Link style={{textDecoration:"none"}}  className='mx-5 ' to='/register'>Go to the register page</Link>
+              
+                <Link style={{textDecoration:"none"}}   to='/forgot'>Go to the forgot page</Link>
               </div>
               <br />
               <hr />
 
               <button
                 type='button'
-                class='btn btn-primary'
+                class='btn btn-success'
                 data-bs-toggle='modal'
                 data-bs-target='#exampleModal'
               >

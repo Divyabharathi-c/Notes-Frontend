@@ -30,15 +30,13 @@ function Forgot() {
 
   return (
     <div>
-      <br />
-      <br />
-      <br />
+      
 
 
-      <div className="container w-75 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div style={{marginTop:"9rem"}} className="container w-50 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
         <div className="row">
           <div className="col-12 text-center">
-            <h2>Forgot Password !</h2>
+            <h1>Forgot Password !</h1>
           </div>
         </div>
         <div className="row">
@@ -51,13 +49,12 @@ function Forgot() {
 					onChange={(e) => setEmail(e.target.value)}
           value={email}/>
                 </div>
-                <div className="form-group">
-                    <button onClick={handleSubmit}  className='btn btn-info form-control'> Submit </button>
-                    <br />
-                    <br />
-                    <br />
-            <button type="submit" onClick={()=>navigate('/login')} class="btn btn-danger w-25 ">
-              Cancel
+                <div className="form-group text-center">
+                    <button onClick={handleSubmit}  className='btn btn-info form-control w-50'> Submit </button>
+                   </div>
+                   <div className="form-group text-center">
+                   <button type="submit" onClick={()=>navigate('/login')} className="btn btn-secondary w-25 mt-5 ">
+             Back to login
             </button>
             </div>
           </form>

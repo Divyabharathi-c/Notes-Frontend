@@ -58,7 +58,7 @@ function Create()
         <div className="container w-75 p-3 shadow p-3 mb-5 bg-body-tertiary rounded my-5">
         <div className="row">
           <div className="col-12 text-center">
-            <h2>Create Notes</h2>
+            <h1>Create Notes</h1>
           </div>
         </div>
         <div className="row">

@@ -44,10 +44,10 @@ function Register() {
      
     
 
-      <div className="container w-75 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div style={{marginTop:"9rem"}} className="container w-50 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
         <div className="row">
           <div className="col-12 text-center">
-            <h2>Register</h2>
+            <h1>Register</h1>
           </div>
         </div>
         <div className="row">
@@ -77,8 +77,14 @@ function Register() {
 
 
             <div className="mb-3 text-center justify-content-center">
-            <button type="submit" onClick={handleSubmit} class="btn btn-primary w-50 ">
+            <button type="submit" onClick={handleSubmit} class="btn btn-success w-50 ">
               Register
+            </button>
+            </div>
+            <hr />
+            <div className="form-group text-center">
+                   <button type="submit" onClick={()=>navigate('/login')} className="btn btn-secondary w-25 mt-3 ">
+             Back to login
             </button>
             </div>
           </form>
