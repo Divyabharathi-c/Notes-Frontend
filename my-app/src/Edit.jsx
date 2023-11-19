@@ -74,7 +74,7 @@ function Edit() {
           <label for="date" class="form-label" >
             <h6>Date</h6>
           </label>
-          <input type="date" class="form-control" name="date" placeholder="Date" value={data.data}
+          <input type="date" class="form-control" name="date" placeholder="Date" value={data.date}
          onChange={handleChange}/>
         </div>
         <div class="mb-3">
@@ -90,7 +90,8 @@ function Edit() {
         <button className="btn btn-success upbtn" onClick={handleDocumentUpdate}>
               Update
             </button>
-            <button className="btn btn-danger bckbtn" onClick={()=>{navigate('/note/all')}}>
+            &ensp;
+            <button className="btn btn-danger bckbtn" onClick={()=>{navigate('/view')}}>
               Back
             </button>
             </div>

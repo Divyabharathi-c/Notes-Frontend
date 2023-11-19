@@ -19,7 +19,7 @@ function Login() {
       console.log(response);
       localStorage.setItem('token', response.data.token);
       // toast.success("Login Successful");
-      navigate('/create');
+      navigate('/view');
     } catch (error) {
       if (error.response && error.response.status >= 400 && error.response.status <= 500) {
         // toast.error("Invalid Login Credentials")
